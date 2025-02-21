@@ -48,10 +48,14 @@ function Home() {
                 }}>
                     <Text style={{ fontFamily: AppFonts.semiBold }}>Tribus</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.botonFiltro2}>
+                <TouchableOpacity style={styles.botonFiltro2} onPress={() => {
+                    navigation.navigate('Elementos');
+                }}>
                     <Text style={{ fontFamily: AppFonts.semiBold }}>Elementos</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.botonFiltro3}>
+                <TouchableOpacity style={styles.botonFiltro3} onPress={() => {
+                    navigation.navigate('Rango');
+                }}>
                     <Text style={{ fontFamily: AppFonts.semiBold }}>Rango</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.botonFiltro4} onPress={() => {

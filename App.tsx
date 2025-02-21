@@ -11,6 +11,7 @@ import {useFonts} from "expo-font";
 import {DetallesYokaiInterface} from "./app/domain/entities/Yokai";
 import Elementos from "./app/presentacion/views/elementos/Elementos";
 import Saga from "./app/presentacion/views/saga/Saga";
+import Rango from "./app/presentacion/views/Rango/Rango";
 
 const Stack=createNativeStackNavigator<RootStackParamlist>();
 export type RootStackParamlist={
@@ -21,7 +22,8 @@ export type RootStackParamlist={
     DetailYoKai: undefined,
     Tribus: undefined,
     Elementos: undefined,
-    Saga: undefined
+    Saga: undefined,
+    Rango: undefined
 }
 
 export default function App() {
@@ -46,6 +48,7 @@ export default function App() {
               <Stack.Screen name={"DetailYoKai"} component={DetailYoKai}></Stack.Screen>
               <Stack.Screen name={"Tribus"} component={Tribus}></Stack.Screen>
               <Stack.Screen name={"Elementos"} component={Elementos}></Stack.Screen>
+              <Stack.Screen name={"Rango"} component={Rango}></Stack.Screen>
               <Stack.Screen name={"Saga"} component={Saga}></Stack.Screen>
           </Stack.Navigator>
       </NavigationContainer>
